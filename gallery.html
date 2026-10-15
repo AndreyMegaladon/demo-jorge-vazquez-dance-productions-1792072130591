@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerij - Jorge Vazquez Dance Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans">
+    <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">JORGE VAZQUEZ</a>
+            <nav class="hidden md:flex items-center space-x-1">
+                <a href="index.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 font-medium transition">Startpagina</a>
+                <a href="about.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 font-medium transition">Over ons</a>
+                <a href="services.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 font-medium transition">Lessen</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Galerij</a>
+                <a href="booking.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 font-medium transition">Boeken</a>
+                <a href="contacts.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 font-medium transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-neutral-900 border-b border-neutral-800 py-3 px-6 text-sm text-neutral-400">
+        <div class="max-w-6xl mx-auto">
+            <a href="index.html" class="hover:text-amber-400">Startpagina</a> > <a href="services.html" class="hover:text-amber-400">Lessen</a> > <span>Galerij</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4 text-white">Sfeergalerij</h1>
+            <p class="text-neutral-400 max-w-2xl mx-auto">Een glimp van onze lessen, producties en energieke sfeer in Amsterdam.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Dance 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=600&q=80" alt="Dance 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1518834195013-e522e831c0e6?auto=format&fit=crop&w=600&q=80" alt="Dance 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1537365513686-79af11fc69ac?auto=format&fit=crop&w=600&q=80" alt="Dance 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=600&q=80" alt="Dance 5" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl border border-neutral-800">
+                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Dance 6" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Jorge Vazquez Dance</h3>
+                <p class="text-sm">Professionele dansschool en producties in het hart van Amsterdam.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                <p class="text-sm mb-2">Van Ostadestraat 488-H, 1074XE Amsterdam</p>
+                <p class="text-sm mb-2">Tel: +31642878411</p>
+                <p class="text-sm">Email: info@jorgevazquezdance.com</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Snelle Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-amber-400">Over ons</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400">Lessen</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400">Boeken</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
